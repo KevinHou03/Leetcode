@@ -6,7 +6,7 @@ def numDistinctIslands(grid):
     # use relative position of a point on an island to the first-discover point coordinate to
     # identify if two island have the same shape
 
-    # shape stores data of a island (relative coordinates)
+    # shape stores data_prep of a island (relative coordinates)
     island = set()
     rows, cols = len(grid), len(grid[0])
     dirs = [(0, 1), (0, -1), (1, 0), (-1, 0)]
