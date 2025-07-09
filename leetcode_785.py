@@ -14,9 +14,9 @@ def isBipartite(graph):
         for neighbor in graph[node]:
             if colors[neighbor] == -1:
                 if not dfs(neighbor, 1 - color):  # 对A的邻居递归，一定要assign和A不一样的颜色
-                    return False
+                    return False # 如果是同一个颜色，返回false
             elif colors[neighbor] == color: # 如果A的邻居颜色和A一样
-                return False
+                return False#同理
 
         return True
 
