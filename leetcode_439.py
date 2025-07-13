@@ -20,7 +20,7 @@ def parseTernary(expression):
             stack.append(expression[i])
             i -= 1
 
-    return stack[0]
+    return stack[0] #
 
 
 
