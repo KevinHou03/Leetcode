@@ -18,7 +18,7 @@ def parseTernary(expression):
             i -= 1
         elif expression[i] != ':':
             stack.append(expression[i])
-            i -= 1
+        i -= 1
 
     return stack[0] #
 
