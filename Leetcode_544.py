@@ -40,7 +40,7 @@ def findContestMatch_recur(n):
         team_len = len(cur_team)
         round = []
         for i in range(team_len // 2):
-            new_match = f'({cur_team[i]}, {cur_team[- i - 1]})'
+            new_match = f'({cur_team[i]}, {cur_team[- i - 1]})' # 注意对相对应的另一组index的计算技巧
             round.append(new_match)
         return helper(round)
         pass
