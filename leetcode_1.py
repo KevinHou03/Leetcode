@@ -37,7 +37,7 @@ plt.axvline(x=1, color='green', linestyle='--', label=r"$x = 1$")
 plt.xlabel("x")
 plt.ylabel("t")
 plt.legend()
-plt.grid(True)
+plt.grid(True)# aaaaaaaa
 
 # Show the plot
 plt.show()
