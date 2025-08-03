@@ -43,7 +43,7 @@ plt.grid(True)# aaaaaaaa
 plt.show()
 
 
-import numpy as np
+
 import matplotlib.pyplot as plt
 
 # Define parameters
