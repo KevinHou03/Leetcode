@@ -34,4 +34,29 @@ def numberOfWaysDP(n, x):
     :type x: int
     :rtype: int
     """
-    # 先把所有n以内的power num全部找出来
+    # 先把所有n以内的 power num with ^x 全部找出来
+    MOD = 10 ** 9 + 7
+
+    powers = []
+    while True:
+        i = 1
+        power = i ** x
+        if power > n:
+            break
+        powers.append(power)
+        i += 1
+
+    # 定义dp， dp[i]表示利用x凑成i这个数的方案总数
+    dp = [0] * (n + 1)
+    dp[0] = 1
+
+    for power in powers:
+        for t in range(n, power - 1, -1):
+            dp[t] = (dp[t] + dp[t - power]) % MOD
+
+    return dp[n]
+# 这是一个01背包问题
+
+
+
+
