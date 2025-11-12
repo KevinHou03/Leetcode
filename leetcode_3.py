@@ -10,7 +10,7 @@ def aux(s):
         print(s[star+1:])
 
     return len(char_list), s[1:]
-
+#
 def lengthOfLongestSubstring(s):
     """
     :type s: str
