@@ -8,7 +8,7 @@ class ListNode(object):
         """
         :type l1: ListNode
         :type l2: ListNode
-        :rtype: ListNode
+        :rtype: ListNod d
         """
         # 传进去的是head
         result_linked_list = l1
