@@ -2,7 +2,7 @@ def find_reverse(s):
     s = 'abc'
     s = s[::-1]
     print(s)
-
+#
 
 def find_all_palindrome(s):
     if len(s) < 2:
